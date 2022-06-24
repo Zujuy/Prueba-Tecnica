@@ -1,32 +1,32 @@
-import React, { Component } from "react";
-import PostServices from "../../services/postServices";
-import { Link } from "react-router-dom";
-import Cards from "../postcards/Cards"
-import { ButtonStyled } from "../../styles/components";
+import React, { Component } from 'react';
+import PostServices from '../../services/postServices';
+import { Link } from 'react-router-dom';
+import Cards from '../postcards/Cards';
+import { ButtonStyled } from '../../styles/components';
 
 const postServices = new PostServices();
 
 export default class Home extends Component {
   state = {
-    posts: []
+    posts: [],
   };
   async componentDidMount() {
     const {
-      data: { posts }
+      data: { posts },
     } = await postServices.getPosts();
     this.setState({
-      posts
+      posts,
     });
-    console.log(this.state)
+    console.log(this.state);
   }
 
   render() {
     return (
       <>
         <ButtonStyled>
-          <h1>Feeds</h1>
+          <h1>Views de post</h1>
           <Link to="/add-post">
-            <button>Crear post</button>
+            <button>Crearas un post</button>
           </Link>
         </ButtonStyled>
         <br></br>
