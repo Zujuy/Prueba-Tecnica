@@ -10,7 +10,7 @@ function Cards({ posts }) {
           <h2>{title}</h2>
           <p>{content}</p>
           <div>
-            <small>Owner: {owner}</small>
+            <small>Usuario: {owner}</small>
           </div>
         </article>
       ))}
