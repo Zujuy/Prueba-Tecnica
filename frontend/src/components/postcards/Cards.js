@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Carousel } from "../../styles/components";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Carousel } from '../../styles/components';
 
 function Cards({ posts }) {
   return (
