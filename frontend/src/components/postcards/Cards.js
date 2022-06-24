@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Carousel } from "../../styles/components";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Carousel } from '../../styles/components';
 
 function Cards({ posts }) {
   return (
@@ -10,7 +10,7 @@ function Cards({ posts }) {
           <h2>{title}</h2>
           <p>{content}</p>
           <div>
-            <small>Owner: {owner}</small>
+            <small>Usuario: {owner}</small>
           </div>
         </article>
       ))}
